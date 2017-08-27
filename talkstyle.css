@@ -42,12 +42,12 @@ a, a:hover, a:vistied{
 
 .linktop_register{
 	color: #ff2b06 !important;
-	border: 1.5px solid #ff2b06;
+	border: 2px solid #ff2b06;
 	border-radius: 1.5em;
 	font-size: 1em;
 	padding: 1% 4% 1% 4%;
-	margin-left: -2%;
-	font-weight: 300;
+	margin-left: -4%;
+	font-weight: 600 !important;
 }
 
 .linktop_register:hover{
@@ -82,13 +82,13 @@ a, a:hover, a:vistied{
 
 .header_links{
 	list-style-type: none;
-	margin-top: 4vh;
-	margin-left: x%;
+	margin-top: 5.47vh;
+	margin-left: 1%;
 }
 
 .header_links li{
 	display: inline;
-	padding: 10px 12px !important;
+	padding: 5px 1.2vw !important;
 }
 
 .header_links li:hover,
@@ -98,7 +98,12 @@ a, a:hover, a:vistied{
 
 @media only screen and (max-width: 768px){
 	.header_links li{
-	display: block;
+	display: block;	}
+	.header_links li a{
+		font-size: 4vw !important;
+	}
+	.header_links{
+		padding-bottom: 40px;
 	}
 }
 @media only screen and (min-width: 1100px) and (max-width: 1125px){
@@ -114,14 +119,19 @@ a, a:hover, a:vistied{
 }
 
 .header_links li a{
-	font-size: 14px;
-	color: #333;
+	font-size: 1.11vw;
+	color: #000000;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 300;
 }
 .header_links li a:hover,
 .header_links li a:focus{
 	color: #ff2b06;
+}
+.header_box_shadow{
+	-webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
 }
 .talkspartner_circle {
 
@@ -235,7 +245,7 @@ margin-top:-10%;
 		}	*/
 		@media only screen and (max-width: 520px){
 			.talks_subheading{
-				font-size: 1px !important;
+				font-size: 2em !important;
 				text-align: center;
 				margin-bottom: -5%;
 			}
@@ -248,7 +258,11 @@ margin-top:-10%;
 			}
 			.linktop_register{
 				margin-left: 1%;
+				padding:5px 15px;
+				margin-top: 60px;
 			}
+			
+
 		}
 		.speaker_div{
 			margin-top: 40px;
@@ -262,9 +276,18 @@ margin-top:-10%;
 		.speaker_img{
 			width:23vw;
 			height: 23vw;
-			border-radius: 250px;
+			border-radius: 32.5vw;
 			margin-top: 4px;
 			margin-left: 45%;
+			z-index: +2;
+			/*position: absolute;*/
+		}
+		.speaker_img2{
+			width:23vw;
+			height: 23vw;
+			border-radius: 32.5vw;
+			margin-top: 4px;
+			
 			z-index: +2;
 			/*position: absolute;*/
 		}
@@ -273,6 +296,17 @@ margin-top:-10%;
 			padding-top: 10.5px;
 			
 		}
+		.red_circle_talk{
+	height: 5.2vw;
+	width: 5.2vw;
+	border-radius: 150vw;
+	background-color:  #ff2b06;
+	top: -14.4vh;
+	position:relative;
+	margin-left: 10vw;
+	z-index: -2;
+}
+
 		.foot{
 	background-color: black;
 	margin-top: 5%;
