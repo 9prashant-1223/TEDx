@@ -11,14 +11,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="js/jquery-3-2-1.js"></script> -->
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="css/main8.css">
-  
+    <link rel="stylesheet" type="text/css" href="css/ma5.css">
+    <link rel="stylesheet" type="text/css" href="css/res.css">
+    <link rel="stylesheet" type="text/css" href="css/talksty.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
 
 </head>
 <body>

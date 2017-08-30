@@ -1,6 +1,28 @@
 
 <?php include('mainframe.php'); ?>
 	
+	<script>
+		$(function() {
+    var header = $(".header");
+    var img = $('header_logo');
+     var header_links = $(".header_links");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 200) {
+            header.removeClass('header').addClass("header_width");
+            header.removeClass('header_links').addClass("header_link");
+            header.removeClass('header_logo').addClass("header_logo1");
+
+        } else {
+            header.removeClass("header_width").addClass('header');
+            header.removeClass('header_link').addClass("header_links");
+            header.removeClass('header_logo1').addClass("header_logo");
+
+        }
+    });
+});
+	</script>
 	<div class="navbar navbar-default header">
 		<div class="container-fluid">
 			<div class="row">
@@ -20,9 +42,9 @@
 			           	<ul class=" header_links">
 				            <li class="active"><a href="main.php">HOME</a></li>
 				            <li><a href="about.php">ABOUT</a></li>
-				            <li><a href="events.php">TALKS</a></li>
-							<li><a href="#">EVENTS</a></li>
-							<li><a href="#">SPONSORS</a></li>
+				            <li><a href="talks.php">TALKS</a></li>
+							<li><a href="events.php">EVENTS</a></li>
+							<li><a href="sponsors.php">SPONSORS</a></li>
 						</ul>
 					</div>
 				</div>
@@ -34,17 +56,19 @@
     </div>
 
     
+
+    
 	
     <div class="container-fluid">
     	<div class="row">
     		<div class="col-md-6">
     			
     		</div>
-    		<div class="col-md-6">
+    		<div class="col-md-5 main_text">
     			<p class="tedx_tag">TEDX IIT ROORKEE PRESENTS</p>
     			<p class="mustering-tag"><b>SYMPHONIC</b></p>
     			<p class="muses-tag"><b>CHAOS</b></p>
-    			<p class="main_date">14<sup>th</sup>OCT 17</p>
+    			<p class="main_date">14<sup>th</sup> OCTOBER 17</p>
     			<p class="main_location">MAC AUDITORIUM</p>
     			<div class="mustering_circle"></div>
     			<div class="row">
@@ -75,23 +99,23 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-7 col-xs-offset-1">
-				<div class="row">
-					<div class="col-xs-9 theme_name">
-						<br>Symphonic Chaos				
+					<div class="row">
+						<div class="col-xs-11 theme_name">
+							<br>Symphonic Chaos				
+						</div>
+						<div class="col-xs-6">
+							
+						</div>
 					</div>
-					<div class="col-xs-6">
-						
+					<div class="row">
+						<div class="col-xs-9 col-xs-offset-0 theme_content">
+							<br>The theme for TEDxIITRoorkee 2017 is symphonic chaos. The theme underlines the beauty of spontaneity,the 'chaos' and how an unorderly universe is the reason for our very existence. The fundamentalism of the idea of chaos is the real beauty itself, thus giving birth to the notion of 'perfectly imperfect'life. In our real world, it is because of this unpredictability that opportunities arise, through which success is achieved.
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-11 col-xs-offset-0 text-justify theme_content">
-						<br>After graduating from business school in the spring of 1995, Sandberg worked as a management consultant for McKinsey & Company for approximately one year (1995-1996). From 1996 to 2001 she again worked for Larry Summers, who was then serving as the United States Secretary of the Treasury under President Bill Clinton. Sandberg assisted in the Treasury's work on forgiving debt in the developing world during the Asian financial crisis
-					</div>
+				<div class="col-xs-4">
+					<img class="theme_img" src="img/img3.png">				
 				</div>
-			</div>
-			<div class="col-xs-4">
-				<img class="theme_img" src="img/img3.png">				
-			</div>
 			</div>
 		</div>
 	</div>
@@ -109,13 +133,13 @@
 		<ul class="nav nav-tabs tab_list" role="tablist" style="border: none;text-align: center;">
         	<li role="presentation" class="active" style="float:none;display:inline-block;">
         		<div style="text-align: center;" data-toggle="tab" href="#speaker1">
-					<img class="speakers_tab_img"  src="img/img2.png" >
+					<img class="speakers_tab_img"  src="img/img7.png" >
 					<p class="speaker_tab_name">SHERYL SANDERG</p>
 				</div>
         	</li>
         	<li role="presentation"  style="float:none;display:inline-block;">
         		<div  style="text-align: center;" data-toggle="tab" href="#speaker2">
-					<img class="speakers_tab_img"  src="img/img2.png" >
+					<img class="speakers_tab_img"  src="img/img7.png" >
 					<p class="speaker_tab_name">SHERYL SANDERG</p>
 				</div>
         	</li>
@@ -127,25 +151,25 @@
         	</li>
         	<li role="presentation"  style="float:none;display:inline-block;">
         		<div style="text-align: center;" data-toggle="tab" href="#speaker4">
-					<img class="speakers_tab_img"  src="img/img2.png" >
+					<img class="speakers_tab_img"  src="img/img7.png" >
 					<p class="speaker_tab_name">SHERYL SANDERG</p>
 				</div>
         	</li>
         	<li role="presentation" style="float:none;display:inline-block;">
         		<div  style="text-align: center;" data-toggle="tab" href="#speaker5">
-					<img class="speakers_tab_img"  src="img/img2.png" >
+					<img class="speakers_tab_img"  src="img/img7.png" >
 					<p class="speaker_tab_name">SHERYL SANDERG</p>
 				</div>
         	</li>
         	<li role="presentation" class="active" style="float:none;display:inline-block;" >
         		<div  style="text-align: center;" data-toggle="tab" href="#speaker6">
-					<img class="speakers_tab_img"  src="img/img2.png" >
+					<img class="speakers_tab_img"  src="img/img7.png" >
 					<p class="speaker_tab_name">SHERYL SANDERG</p>
 				</div>
         	</li>
         	<li role="presentation" style="float:none;display:inline-block;">
         		<div style="text-align: center;" data-toggle="tab" href="#speaker7">
-					<img class="speakers_tab_img"  src="img/img2.png" >
+					<img class="speakers_tab_img"  src="img/img7.png" >
 					<p class="speaker_tab_name">SHERYL SANDERG</p>
 				</div>
         	</li>
@@ -155,7 +179,7 @@
          	<div id="speaker1" class="tab-pane fade in active">
          		<div class="row" style="margin-top: 50px">
 					<div class="col-xs-4">
-						<img src="img/img2.png" class="speaker_img">				
+						<img src="img/img7.png" class="speaker_img">				
 					</div>
 					<div class="col-xs-8">
 						<div class="row">
@@ -168,7 +192,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-11 col-xs-offset-0 text-justify speaker_content">
+							<div class="col-xs-9 col-xs-offset-0 speaker_content">
 								<br>After graduating from business school in the spring of 1995, Sandberg worked as a management consultant for McKinsey & Company for approximately one year (1995-1996). From 1996 to 2001 she again worked for Larry Summers, who was then serving as the United States Secretary of the Treasury under President Bill Clinton. Sandberg assisted in the Treasury's work on forgiving debt in the developing world during the Asian financial crisis
 							</div>
 						</div>
@@ -374,7 +398,7 @@
 
 
 
-<?php include('partners.php'); ?>
+<?php include('footer.php'); ?>
 
 <script>
 	console.log('Developed By : - Prashant Verma')
