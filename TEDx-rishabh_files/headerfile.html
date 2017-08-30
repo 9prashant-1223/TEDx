@@ -1,0 +1,85 @@
+   
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main9.css">
+  
+    <title></title>
+</head>
+<body>
+
+
+   
+
+
+    <div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <!-- items mirrored twice, total of 12 -->
+  </ul>
+</div>
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <li>
+      <img src="img/img1.png" />
+    </li>
+    <!-- items mirrored twice, total of 12 -->
+  </ul>
+</div>
+
+
+<script type="text/javascript">
+    
+    $(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+    </body>
+    </html>
